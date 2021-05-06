@@ -564,6 +564,8 @@ footer {
   font-weight: 300; }
   footer a {
     color: inherit; }
+    footer a:hover {
+      color: inherit; }
   footer .footer__copy {
     font-family: 'Playfair Display', serif;
     font-weight: 900;

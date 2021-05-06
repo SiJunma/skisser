@@ -659,6 +659,10 @@ footer {
 
     a {
         color: inherit;
+
+        &:hover {
+            color: inherit;
+        }
     }
 
     .footer__copy {
