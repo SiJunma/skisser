@@ -113,6 +113,8 @@ h6 {
     z-index: 3;
     padding-top: 45px;
     mix-blend-mode: hard-light;
+    display: flex;
+    flex-direction: column;
 
     transition: background-color 0.2s ease, height 0.3s ease-in-out;
 
@@ -123,7 +125,11 @@ h6 {
         transition: opacity 0.5s ease;
         color: #FFFFFF;
         padding-left: 90px;
-        padding-top: 40px;
+
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 0;
+        padding-bottom: 60px;
         
         .nav__menu-list {
             padding: 0;
