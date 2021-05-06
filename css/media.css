@@ -395,7 +395,6 @@
     font-size: 40px; }
 
   .nav .nav__menu {
-    padding-top: 30px;
     padding-left: 60px; }
     .nav .nav__menu .nav__menu-list a {
       font-size: 40px; }
@@ -549,12 +548,10 @@
       .footer-postscriptum .footer-postscriptum__container::before {
         display: none; }
 
-  .nav .nav__menu {
-    padding-top: 15px; }
-    .nav .nav__menu .nav__menu-list a {
-      font-size: 34px; }
-    .nav .nav__menu p {
-      padding-right: 40px; } }
+  .nav .nav__menu .nav__menu-list a {
+    font-size: 34px; }
+  .nav .nav__menu p {
+    padding-right: 40px; } }
 @media screen and (max-width: 426px) {
   .upcoming-section .upcoming__list li {
     width: 90%; }
@@ -594,7 +591,6 @@
       display: none; } }
 @media screen and (max-width: 384px) {
   .nav .nav__menu {
-    padding-top: 35px;
     padding-left: 20px; }
     .nav .nav__menu p {
       padding-right: 20px; }
