@@ -17,7 +17,9 @@
 
     <link rel="stylesheet" href="css/bootstrap-grid-reboot.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900;400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -69,23 +71,23 @@
     <main>
         <section class="tabs-section">
             <div class="container">
-                <ul class="tabs-section__list">
-                    <li class="tab-active">
-                        <button class="btn" type="button">KUNDCASE</button>
-                    </li>
-                    <li>
-                        <button class="btn" type="button">LEARNINGS</button>
-                    </li>
-                    <li>
-                        <button class="btn" type="button">TJÄNSTER</button>
-                    </li>
-                </ul>
+                <div class="tabs-section__list" id="tabsSlider">
+                    <div>
+                        <button class="btn tab-btn tab-active" type="button">KUNDCASE</button>
+                    </div>
+                    <div>
+                        <button class="btn tab-btn" type="button">LEARNINGS</button>
+                    </div>
+                    <div>
+                        <button class="btn tab-btn" type="button">TJÄNSTER</button>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="tabs-content-section">
             <div class="container">
-                <ul class="tabs-content-section__list">
+                <ul class="tabs-content-section__list tabs-content-page_visible" id="page1">
                     <li>
                         <div class="tab-card">
                             <div class="tab-card__img">
@@ -207,6 +209,129 @@
                     </li>
                 </ul>
 
+                <ul class="tabs-content-section__list" id="page2">
+
+                    <li>
+                        <div class="tab-card">
+                            <div class="tab-card__img">
+                                <img src="img/photo3.jpg">
+                                <img class="tab-card__logo-brand" src="img/sweco.png" style="margin-bottom: 34px;">
+                            </div>
+                            <div class="tab-card__content">
+                                <a href="#" class="tab-card__title-link">
+                                    <h4>
+                                        Vi sökte en vikarie, men fick en raketmotor
+                                    </h4>
+                                </a>
+                                <span class="author">Kund: Sweco</span>
+                                <p>
+                                    Vi vände oss till Doings för att vi sedan tidigare jobbade med dem och var supernöjda. Vi fick förmånen att jobba med en strategisk och handlingskraftig doer som är lyhörd, sympatisk och lätt att tycka om. Hon var fantastiskt snabb på att komma in i uppdraget och bidra från dag ett. Man blir utmanad och får energi av att samarbeta med Doings – dessutom har man roligt under tiden!
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tab-card">
+                            <div class="tab-card__img">
+                                <img src="img/photo4.jpg">
+                                <img class="tab-card__logo-brand" src="img/quicksprin.png">
+                            </div>
+                            <div class="tab-card__content">
+                                <a href="#" class="tab-card__title-link">
+                                    <h4>
+                                        Så fick vi med oss medarbetarna på tillväxtresan
+                                    </h4>
+                                </a>
+                                <span class="author">Kund: Quickspin</span>
+                                <p>
+                                    Det märks direkt när man möter personer som har både hjärta, passion och kunskap för det de gör. Vi har alltid fått den proffsigaste hjälpen och bästa bollplanket genom vår resa. Och Doings har från dag ett känts som en del av oss på Quickspin.De utmanar oss, får oss att jobba hårdare och får oss att tänka i andra perspektiv. Kulturen vi skapat på Quickspin genom åren är en direkt följd av Doings fantastiska arbete och engagemang för oss.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tab-card">
+                            <div class="tab-card__img">
+                                <img src="img/photo5.jpg">
+                                <img class="tab-card__logo-brand" src="img/star-stable.png">
+                            </div>
+                            <div class="tab-card__content">
+                                <a href="#" class="tab-card__title-link">
+                                    <h4>
+                                        Så blev vår organisation mer agil
+                                    </h4>
+                                </a>
+                                <span class="author">Kund: StarStable</span>
+                                <p>
+                                    Vi kunde inte önskat oss en mer passande doer, med hennes inspirerande och moderna HR-mindset. I kombination med Doings övriga kompetenser bakom kulisserna för idéer, bollplank och inspiration, fick vi en leverans långt över förväntan.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tab-card">
+                            <div class="tab-card__img">
+                                <img src="img/photo2.jpg">
+                                <img class="tab-card__logo-brand" src="img/klovern.png">
+                            </div>
+                            <div class="tab-card__content">
+                                <a href="#" class="tab-card__title-link">
+                                    <h4>
+                                        Emplyer branding på riktigt
+                                    </h4>
+                                </a>
+                                <span class="author">Kund: Klövern</span>
+                                <p>
+                                    Vårt strategiska ramverk är helt suveränt! Doings och Saatchi & Saatchi har fångat vår själ. Det absolut viktigaste värdet är delaktigheten och engagemanget som vi har skapat bland alla våra medarbetare. Processen är briljant designad med tillit, gemenskap, engagemang och affärsmässigt fokus som riktmärken.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tab-card">
+                            <div class="tab-card__img">
+                                <img src="img/photo6.jpg">
+                                <img class="tab-card__logo-brand" src="img/hemnet.png">
+                            </div>
+                            <div class="tab-card__content">
+                                <a href="#" class="tab-card__title-link">
+                                    <h4>
+                                        Vi bygger ett starkt ledarforuml
+                                    </h4>
+                                </a>
+                                <span class="author">Kund: Hemnet</span>
+                                <p>
+                                    Vi har goda erfarenheter från tidigare samarbeten med Doings och vi behövde en partner med  spetskompetens kring just ledarskap. Vi upplever att Doings har ett genuint intresse att utveckla oss som bolag liksom våra chefer och det är en bra utgångspunkt för ett riktigt gott samarbete.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tab-card">
+                            <div class="tab-card__img">
+                                <img src="img/photo1.jpg">
+                                <img class="tab-card__logo-brand" src="img/ramboll.png">
+                            </div>
+                            <div class="tab-card__content">
+                                <a href="#" class="tab-card__title-link">
+                                    <h4>
+                                        Så fick vi ut strategin i händer och fötter
+                                    </h4>
+                                </a>
+                                <span class="author">Kund: Ramboll</span>
+                                <p>
+                                    Vi valde Doings framförallt för att det iterativa upplägget tilltalade oss. Många andra leverantörer erbjöd färdiga ”paket”, vilket gör att både vi som kund och leverantören är låsta till ett förbestämt upplägg. Med Doings lösning – där vi hade en ram för upp-lägget och en målbild om vad vi ville uppnå – fick vi en följsam och relevant process för deltagarna. Tack vare det kunde vi tillsammans lära och och anpassa processen till ett än mer träffsäkert resultat
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
                 <div class="tabs-content-section__dots">
                     <div class="tabs-content-section__page">
                         <span>Sidan</span>
@@ -215,10 +340,10 @@
                         <span>3</span>
                     </div>
 
-                    <div class="tabs-content-section__dots-container">
-                        <button type="button" id="#tab1" class="dot-active"></button>
-                        <button type="button" id="#tab2"></button>
-                        <button type="button" id="#tab3"></button>
+                    <div class="tabs-content-section__dots-container" id="contentDotsContainer">
+                        <a href="#page1" data-page="#page1" class="dot-btn dot-active"></a>
+                        <a href="#page2" data-page="#page2" class="dot-btn"></a>
+                        <a href="#page3" data-page="#page3" class="dot-btn"></a>
                     </div>
                 </div>
             </div>
@@ -289,6 +414,43 @@
         </div>
     </section>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('#tabsSlider').slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 5,
+            centerMode: false,
+            variableWidth: true,
+            swipeToSlide: true,
+            arrows: false,
+
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                    }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                    }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                    }
+                }
+            ]
+          });
+        });
+    </script>
 </body>
 </html>

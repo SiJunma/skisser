@@ -63,10 +63,11 @@
     font-size: 18px;
     max-width: 660px; }
 
-  .header-work-bg .header-title__wrapper::after {
-    display: none; }
   .header-work-bg .header-title__wrapper::before {
     right: 20px; }
+
+  .header-headline_ghost-bg.header-work-bg .header-title__wrapper::after {
+    display: none; }
 
   .tabs-content-section .tabs-content-section__list li {
     max-width: unset; }

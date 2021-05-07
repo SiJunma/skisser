@@ -1,3 +1,5 @@
+// Open menu onclick burger-btn
+
 const navBtnToggle = document.getElementById('navBtnToggle');
 const navMain = document.getElementById('navMain');
 const navMenu = document.getElementById('navMenu');
@@ -7,6 +9,7 @@ navBtnToggle.addEventListener('click', (evt) => {
     navMain.classList.toggle('nav_open');
 });
 
+// For Logo in nav on index.html wich appear when scrolling, burger-btn change color on scrolling
 
 const mainLogo = document.querySelector('.header-logo-main-js');
 
@@ -23,3 +26,29 @@ if (mainLogo) {
         }
     };
 }
+
+$( document ).ready(function() {
+
+    // tab-active onclick tabs
+
+    $('#tabsSlider .tab-btn').click((evt) => {
+        evt.preventDefault();
+        $('#tabsSlider .tab-btn').removeClass('tab-active');
+        evt.currentTarget.classList.add('tab-active');
+    })
+
+    // dots-active onclick dots
+
+    $('#contentDotsContainer .dot-btn').click((evt) => {
+        let target = evt.currentTarget;
+        $('#contentDotsContainer .dot-btn').removeClass('dot-active');
+        target.classList.add('dot-active');
+
+        // target page visible onclick dot
+        let pageNumber = target.getAttribute('data-page').toString()
+        $('.tabs-content-section__list').removeClass('tabs-content-page_visible');
+        $(pageNumber).addClass('tabs-content-page_visible');
+    })
+
+});
+

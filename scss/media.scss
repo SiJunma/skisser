@@ -115,14 +115,14 @@
     }
 
     .header-work-bg .header-title__wrapper {
-        &::after {
-            display: none;
-        }
-
         &::before {
             right: 20px;
         }
     }  
+
+    .header-headline_ghost-bg.header-work-bg .header-title__wrapper::after {
+        display: none;
+    }
 
     .tabs-content-section .tabs-content-section__list {
         li {
