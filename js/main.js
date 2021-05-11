@@ -61,6 +61,7 @@ $( document ).ready(function() {
         let pageNumber = target.getAttribute('data-page').toString();
         $('.tabs-content-section__list').removeClass('tabs-content-page_visible');
         $(pageNumber).addClass('tabs-content-page_visible');
+        topFunction();
     });
 
     //close article btn in article
