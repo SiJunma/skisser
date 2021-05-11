@@ -52,6 +52,7 @@ $( document ).ready(function() {
     // dots-active onclick dots (dots for pages in tab-content)
 
     $('#contentDotsContainer .dot-btn').click((evt) => {
+        evt.preventDefault();
         let target = evt.currentTarget;
         $('#contentDotsContainer .dot-btn').removeClass('dot-active');
         target.classList.add('dot-active');
