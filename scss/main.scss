@@ -1071,6 +1071,7 @@ footer {
     .article-section__headline-container {
         height: 800px;
         position: relative;
+        z-index: 0;
 
         &::before {
             content: '';
@@ -1081,22 +1082,24 @@ footer {
             position: absolute;
             left: 0;
             top: 0;
+            z-index: -1;
         }
 
         img {
             width: 100%;
             object-fit: cover;
             height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
         }
 
         .article-section__headline-content {
-            position: absolute;
             width: 100%;
             height: 100%;
-            left: 0;
             padding: 60px;
             padding-right: 0;
-            top: 0;
             color: #F2ECDC;
             max-width: 1020px;
             flex-direction: column;
