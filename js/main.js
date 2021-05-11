@@ -35,9 +35,21 @@ $( document ).ready(function() {
         evt.preventDefault();
         $('#tabsSlider .tab-btn').removeClass('tab-active');
         evt.currentTarget.classList.add('tab-active');
+
+        tabContentShow(evt.currentTarget.getAttribute('data-target'));
+    });
+
+    // case-artickle show onclick link
+
+    $('.tab-card__title-link').click((evt) => {
+        evt.preventDefault();
+
+        if(evt.currentTarget.getAttribute('href') && evt.currentTarget.getAttribute('href') !== '#') {
+            caseArticleShow(evt.currentTarget.getAttribute('href'));
+        }
     })
 
-    // dots-active onclick dots
+    // dots-active onclick dots (dots for pages in tab-content)
 
     $('#contentDotsContainer .dot-btn').click((evt) => {
         let target = evt.currentTarget;
@@ -45,10 +57,52 @@ $( document ).ready(function() {
         target.classList.add('dot-active');
 
         // target page visible onclick dot
-        let pageNumber = target.getAttribute('data-page').toString()
+        let pageNumber = target.getAttribute('data-page').toString();
         $('.tabs-content-section__list').removeClass('tabs-content-page_visible');
         $(pageNumber).addClass('tabs-content-page_visible');
-    })
+    });
+
+    //close article btn in article
+
+    $('.article-section__toback').click((evt) => {
+        evt.preventDefault();
+        tabContentShow($('.tab-active').attr('data-target'));
+    });
+
+    //tab-content show onclick tab
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    
+
+    function tabContentShow(id) {
+        tabContentNone();
+        caseArticleNone()
+        $(id).addClass('tabs-content-section_visible');
+        topFunction();
+    };
+
+    function caseArticleShow(id) {
+        caseArticleNone();
+        tabContentNone();
+
+        $(id).addClass('article-section_visible');
+        topFunction();
+    };
+
+    function tabContentNone() {
+        $('.tabs-content-section').removeClass('tabs-content-section_visible');
+    }
+
+    function caseArticleNone() {
+        $('.article-section').removeClass('article-section_visible');
+    }
 
 });
+
+
+
 
