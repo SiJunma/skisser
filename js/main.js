@@ -69,6 +69,7 @@ $( document ).ready(function() {
     $('.article-section__toback').click((evt) => {
         evt.preventDefault();
         tabContentShow($('.tab-active').attr('data-target'));
+        topFunction();
     });
 
     //tab-content show onclick tab
@@ -77,8 +78,6 @@ $( document ).ready(function() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-
-    
 
     function tabContentShow(id) {
         tabContentNone();
@@ -91,16 +90,21 @@ $( document ).ready(function() {
         caseArticleNone();
         tabContentNone();
 
+        $('.header-work-bg').removeClass('header-headline_ghost-bg');
+
         $(id).addClass('article-section_visible');
         topFunction();
     };
 
     function tabContentNone() {
         $('.tabs-content-section').removeClass('tabs-content-section_visible');
+        topFunction();
     }
 
     function caseArticleNone() {
         $('.article-section').removeClass('article-section_visible');
+        $('.header-work-bg').addClass('header-headline_ghost-bg');
+        topFunction();
     }
 
 });
