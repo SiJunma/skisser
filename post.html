@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" /> 
+
+    <meta property="og:title" content="Doing For a Change" />
+    <meta property="og:description" content="Vi är en konsultbyrå som utvecklar kultur, struktur, kommunikation och rätt beteenden för organisationer i förändring. Utifrån era behov och ert nuläge ser vi till att ni lyckas med ert förändringsarbete." />
+    <meta property="og:image" content="https://sijunma.github.io/skisser/img/og-image.jpg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="534" />
+    <meta property="og:url" content="https://doingforachange.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+
+    <link rel="stylesheet" href="css/bootstrap-grid-reboot.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900;400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Doing For a Change</title>
+</head>
+<body class="blog-page">
+
+    <nav class="nav" id="navMain">
+        <div class="container-fluid">
+            <div class="nav__nav">
+                <button type="button" class="nav__btn-toggle" id="navBtnToggle">
+                    <span class="nav__btn-toggle_i"></span>
+                    <span class="nav__btn-toggle_ii"></span>
+                    <span class="nav__btn-toggle_iii"></span>
+                </button>
+
+                <a href="index.html" class="nav__logo-box header-logo-main-js">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.6 45.06">
+                        <path class="cls-1" d="M0,0V25.82H7.82A17,17,0,0,0,13.36,25,12.55,12.55,0,0,0,17.14,23a10.05,10.05,0,0,0,2.38-2.75,13.22,13.22,0,0,0,1.27-2.89,13,13,0,0,0,.52-2.5c.07-.75.1-1.28.1-1.58s0-.84-.1-1.59a13,13,0,0,0-.52-2.5,13.22,13.22,0,0,0-1.27-2.89,10.2,10.2,0,0,0-2.38-2.75A11.27,11.27,0,0,0,14.62,2H29.26A11,11,0,0,0,26.2,4.22a11.82,11.82,0,0,0-2.51,3.92,13.46,13.46,0,0,0-.91,5,13.59,13.59,0,0,0,.91,5,11.81,11.81,0,0,0,2.51,3.94,11,11,0,0,0,3.86,2.58,13.86,13.86,0,0,0,9.93,0,11,11,0,0,0,5.61-5V30a3.55,3.55,0,0,0-1.2-.66A7.79,7.79,0,0,0,42.18,29a5.53,5.53,0,0,0-2.19.39,4.81,4.81,0,0,0-1.49,1A3.77,3.77,0,0,0,37.38,33a4,4,0,0,0,.52,2.19,4.07,4.07,0,0,0,1.29,1.29,6.72,6.72,0,0,0,1.68.75c.61.18,1.16.37,1.68.56a4.94,4.94,0,0,1,1.29.72,1.53,1.53,0,0,1,.52,1.25,2,2,0,0,1-.26,1,2.38,2.38,0,0,1-.67.74,3.09,3.09,0,0,1-.91.45,3.38,3.38,0,0,1-1,.15,3.94,3.94,0,0,1-1.67-.37,3.13,3.13,0,0,1-1.33-1.15L37,41.94a4,4,0,0,0,1.23,1.12H33.68a6.85,6.85,0,0,0,.94-.46v-7H29.56v1.8H32.7v3.94a5.22,5.22,0,0,1-1.55.55,9.22,9.22,0,0,1-1.93.19A5.4,5.4,0,0,1,27,41.67a5.14,5.14,0,0,1-1.74-1.19,5.48,5.48,0,0,1-1.16-1.79,5.83,5.83,0,0,1-.42-2.23,6.38,6.38,0,0,1,.38-2.19,5.33,5.33,0,0,1,1.08-1.79,5.39,5.39,0,0,1,1.68-1.21,5.21,5.21,0,0,1,2.2-.45,6.4,6.4,0,0,1,2.06.33A5.08,5.08,0,0,1,33,32.32l1.36-1.46a6,6,0,0,0-2.08-1.35,9,9,0,0,0-3.2-.49,7.64,7.64,0,0,0-3,.57,7,7,0,0,0-2.33,1.57,7.36,7.36,0,0,0-1.52,2.36,7.73,7.73,0,0,0-.55,2.94,8,8,0,0,0,.51,2.85,6.93,6.93,0,0,0,1.48,2.37,6.82,6.82,0,0,0,1.94,1.38H18.92V29.38H17V41h0L9.16,29.38H6.64V43.06H2V29H0V45.06H47.6V0ZM18.15,8.59a11,11,0,0,1,.92,4.67,11,11,0,0,1-.92,4.66,9,9,0,0,1-2.52,3.25,10.63,10.63,0,0,1-3.77,1.9,16.54,16.54,0,0,1-4.65.62H2.38V2.82H7.21a16.54,16.54,0,0,1,4.65.62,10.63,10.63,0,0,1,3.77,1.9A9,9,0,0,1,18.15,8.59Zm26.21,8.65a9.74,9.74,0,0,1-2,3.31,9.28,9.28,0,0,1-3.16,2.21,11.24,11.24,0,0,1-8.33,0,9.28,9.28,0,0,1-3.16-2.21,9.74,9.74,0,0,1-2-3.31,12,12,0,0,1-.7-4.11A12,12,0,0,1,25.69,9a9.83,9.83,0,0,1,2-3.31,9.26,9.26,0,0,1,3.16-2.2,11.11,11.11,0,0,1,8.33,0,9.26,9.26,0,0,1,3.16,2.2,9.83,9.83,0,0,1,2,3.31,12,12,0,0,1,.7,4.12A12,12,0,0,1,44.36,17.24Zm-.51-13A11,11,0,0,0,40.79,2H45.6V6.59A11.1,11.1,0,0,0,43.85,4.22Zm-.94,31.46a15.11,15.11,0,0,1-1.68-.54,4,4,0,0,1-1.29-.78A1.77,1.77,0,0,1,39.42,33a2.13,2.13,0,0,1,.13-.7,1.89,1.89,0,0,1,.45-.71,2.3,2.3,0,0,1,.85-.54,3.64,3.64,0,0,1,1.33-.21,3.31,3.31,0,0,1,1.5.34,2.64,2.64,0,0,1,1,.9l.9-.82v6a3.94,3.94,0,0,0-1-.85A7.56,7.56,0,0,0,42.91,35.68ZM8.56,31.9h0l7.55,11.16H8.56ZM44.49,43.06a3.88,3.88,0,0,0,.47-.32A4.33,4.33,0,0,0,45.6,42v1Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav__menu" id="navMenu">
+            <div class="container">
+                <ul class="nav__menu-list">
+                    <li><a href="work.html">THE WORK</a></li>
+                    <li><a href="blog.html">VÅR BLOG</a></li>
+                    <li><a href="about.html">OM OSS</a></li>
+                    <li><a href="contact.html">KONTAKT</a></li>
+                </ul>
+                <p>
+                    Det bästa sättet att lära känna oss är ett personligt möte. Var inte blyg, utan kom förbi på en kopp kaffe och berätta hur vi kan hjälpa dig och ditt företag. <br>
+                    Du når oss enklast på <a href="mailto:hej@doings.se">hej@doings.se</a>
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-blog-bg">
+        <div class="container">
+            <div class="header-title__wrapper">
+                <h1>The Blog</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-page__blog-section">
+            <div class="container">
+                <div class="blog-sheet">
+
+                    <div class="blog-post__head">
+                        <img src="img/blog-post-head.jpg" alt="Odlingstider! Så får ni motivationen att frodas">
+
+                        <h1>Odlingstider! Så får ni motivationen att frodas</h1>
+                        <div class="blog-post__author">
+                            <img src="img/Gustav.png" alt="Gustav">
+                            Gustav  Roth
+                        </div>
+                    </div>
+
+                    <div class="blog__wrapper">
+                        <article class="blog-post">
+                            <p class="blog-post__desc">
+                                Våren är här och det börjar äntligen gro och växa i skog, mark och pallkragar. Precis som växter behöver vi människor vissa grundläggande förutsättningar för att växa och må bra och vara motiverade. Men vad skapar egentligen motivation? Vad får den att växa? Och vad är skillnaden mellan motivation och engagemang? Stor fråga som kräver ett visst resonemang. Häng med!
+                            </p>
+
+                            <h6>Skillnad på engagemang och motivation?</h6>
+                            <p>
+                                För mig handlar engagemang om en allmän känsla av entusiasm och intresse. Känslan är oftast positiv, men inte alltid – negativa människor kan också vara engagerade. Motivation däremot, kopplar till action och ett görande. En motiverad person är redo att hugga i och har alltid en plan för att agera. Motivation ligger därför mycket nära handling medan engagemang ligger närmare en upplevelse. Om vi tar fasta på det resonemanget så är det motivation snarare än engagemang som verkligen gör skillnad.
+                            </p>
+
+                            <h6>Bästa förutsättningarna för motivation</h6>
+                            <p>
+                                Som vi vet är det svårt att tvinga någon att bli motiverad. “Nu får du fasen se till att vara lite motiverad!” Det funkar liksom inte. Vad man kan göra är att se till att förutsättningarna är gynnsamma för motivation att uppstå. Lite som att se till att växtplatsen för en planta är fördelaktig för just den växten att leva och utvecklas i. Motivationsforskningen har lärt oss mycket om detta. Och en av de mest tongivande forskningsteorierna är Self-Determination Theory (Deci & Ryan) som lär oss vilka förutsättningar som är nödvändiga för att få motivationsplantan att växa. Den fokuserar på tre faktorer som nödvändiga som grogrund för inre motivation: kompetens, självbestämmande och samhörighet (Competence, autonomy och relatedness).
+                            </p>
+
+                            <h6>Vi behöver känna oss kompetenta</h6>
+                            <p>
+                                Har du någon gång känt dig inkompetent eller dum? Kanske inslängd i något sammanhang, så långt utanför din comfort zone att du liksom tappar fotfästet? Och motivationen?
+                            </p>
+                            <p>
+                                Känslan av kompetens handlar om att känna att man har det kunnande man behöver för att genomföra något. Självklart ska vi sträva efter att gå utanför vår comfort zone. Det är så vi lär oss. Men viktigt är att vi känner att även om vi inte har all den kunskap som vi behöver just nu, så är vi trygga med det. Och trygga med att och hur vi kan tillskansa oss den kunskap som krävs. Känslan av kompetens behöver också speglas av omgivningen. Här är återkoppling och psykologisk trygghet väldigt viktigt. Positiv förstärkning, feedback och stöd från omgivningen är alla delar som kan stärka känslan av kompetens.
+                            </p>
+
+                            <h6>Vi behöver ett visst mått av självbestämmande</h6>
+                            <p>
+                                Alla har vi någon gång “suttit av” tiden på jobbet. Eller deltagit i ett obligatoriskt möte där vi inte känner att vi kan tillföra något. Typisk motivationsdödare och motsatsen till självbestämmande.
+                            </p>
+                            <p>
+                                Självbestämmande handlar om just det – att själv kunna påverka sitt arbete. Och innebär t.ex. att man upplever att man har handlingsutrymme, frihet att påverka och styra situationen kring det arbete man utför. Exempelvis när och hur arbetet utförs. Och här kommer tilliten in! Här blir det viktigt att arbetsgivare och chefer vågar släppa kontrollen och lämna över åtminstone delar av den till sina medarbetare. Och lita på att de är de som bäst vet hur och när arbetet ska utföras för att skapa mest värde.
+                            </p>
+
+                            <div class="blog-post__contacts">
+                                <h5>Dela inlägget</h5>
+                                <ul class="blog-post__contacts-list">
+                                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                                    <li><a href="#" aria-label="Linkedin">LinkedIn</a></li>
+                                    <li><a href="#" aria-label="E-mail">E-mail</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <aside class="blog-aside">
+                            <div class="blog-aside__title">
+                                <h5>Arkivet</h5>
+                                <p>
+                                    Sortera efter: <a href="#">Senast inlagda</a> | <a href="#">Populärast</a>
+                                </p>
+                            </div>
+
+                            <ul class="blog-aside__list">
+                                <li>
+                                    <a href="#"><b>Gustav Roth:</b></a> <a href="#">Odlingstider! Så får ni motivationen att frodas</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Leila Ljungberg:</b></a> <a href="#">Agil HR – från process till produkt med medarbetaren i fokus</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Johanna Friman:</b></a> <a href="#">Mer måndagar åt folket!</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Emma Forsgren:</b></a> <a href="#">Betalt för att leva värderingarna</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Lena Noaksson:</b></a> <a href="#">Open position: Director of Wellbeing</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Emma Forsgren:</b></a> <a href="#">Det vi belönar får vi också mer av</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Gustav Roth:</b></a> <a href="#">Vi är Doers men också Beings</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Alla Doers:</b></a> <a href="#">5 tips för hållbara medarbetare </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><b>Alla Doers:</b></a> <a href="#">Digital julfest – våra bästa tips</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                    <div class="blog-post__bottom">
+                        <a href="blog.html" class="blog-post__toback">Tillbaka till bloggen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.6 45.06">
+                        <path class="cls-1" d="M0,0V25.82H7.82A17,17,0,0,0,13.36,25,12.55,12.55,0,0,0,17.14,23a10.05,10.05,0,0,0,2.38-2.75,13.22,13.22,0,0,0,1.27-2.89,13,13,0,0,0,.52-2.5c.07-.75.1-1.28.1-1.58s0-.84-.1-1.59a13,13,0,0,0-.52-2.5,13.22,13.22,0,0,0-1.27-2.89,10.2,10.2,0,0,0-2.38-2.75A11.27,11.27,0,0,0,14.62,2H29.26A11,11,0,0,0,26.2,4.22a11.82,11.82,0,0,0-2.51,3.92,13.46,13.46,0,0,0-.91,5,13.59,13.59,0,0,0,.91,5,11.81,11.81,0,0,0,2.51,3.94,11,11,0,0,0,3.86,2.58,13.86,13.86,0,0,0,9.93,0,11,11,0,0,0,5.61-5V30a3.55,3.55,0,0,0-1.2-.66A7.79,7.79,0,0,0,42.18,29a5.53,5.53,0,0,0-2.19.39,4.81,4.81,0,0,0-1.49,1A3.77,3.77,0,0,0,37.38,33a4,4,0,0,0,.52,2.19,4.07,4.07,0,0,0,1.29,1.29,6.72,6.72,0,0,0,1.68.75c.61.18,1.16.37,1.68.56a4.94,4.94,0,0,1,1.29.72,1.53,1.53,0,0,1,.52,1.25,2,2,0,0,1-.26,1,2.38,2.38,0,0,1-.67.74,3.09,3.09,0,0,1-.91.45,3.38,3.38,0,0,1-1,.15,3.94,3.94,0,0,1-1.67-.37,3.13,3.13,0,0,1-1.33-1.15L37,41.94a4,4,0,0,0,1.23,1.12H33.68a6.85,6.85,0,0,0,.94-.46v-7H29.56v1.8H32.7v3.94a5.22,5.22,0,0,1-1.55.55,9.22,9.22,0,0,1-1.93.19A5.4,5.4,0,0,1,27,41.67a5.14,5.14,0,0,1-1.74-1.19,5.48,5.48,0,0,1-1.16-1.79,5.83,5.83,0,0,1-.42-2.23,6.38,6.38,0,0,1,.38-2.19,5.33,5.33,0,0,1,1.08-1.79,5.39,5.39,0,0,1,1.68-1.21,5.21,5.21,0,0,1,2.2-.45,6.4,6.4,0,0,1,2.06.33A5.08,5.08,0,0,1,33,32.32l1.36-1.46a6,6,0,0,0-2.08-1.35,9,9,0,0,0-3.2-.49,7.64,7.64,0,0,0-3,.57,7,7,0,0,0-2.33,1.57,7.36,7.36,0,0,0-1.52,2.36,7.73,7.73,0,0,0-.55,2.94,8,8,0,0,0,.51,2.85,6.93,6.93,0,0,0,1.48,2.37,6.82,6.82,0,0,0,1.94,1.38H18.92V29.38H17V41h0L9.16,29.38H6.64V43.06H2V29H0V45.06H47.6V0ZM18.15,8.59a11,11,0,0,1,.92,4.67,11,11,0,0,1-.92,4.66,9,9,0,0,1-2.52,3.25,10.63,10.63,0,0,1-3.77,1.9,16.54,16.54,0,0,1-4.65.62H2.38V2.82H7.21a16.54,16.54,0,0,1,4.65.62,10.63,10.63,0,0,1,3.77,1.9A9,9,0,0,1,18.15,8.59Zm26.21,8.65a9.74,9.74,0,0,1-2,3.31,9.28,9.28,0,0,1-3.16,2.21,11.24,11.24,0,0,1-8.33,0,9.28,9.28,0,0,1-3.16-2.21,9.74,9.74,0,0,1-2-3.31,12,12,0,0,1-.7-4.11A12,12,0,0,1,25.69,9a9.83,9.83,0,0,1,2-3.31,9.26,9.26,0,0,1,3.16-2.2,11.11,11.11,0,0,1,8.33,0,9.26,9.26,0,0,1,3.16,2.2,9.83,9.83,0,0,1,2,3.31,12,12,0,0,1,.7,4.12A12,12,0,0,1,44.36,17.24Zm-.51-13A11,11,0,0,0,40.79,2H45.6V6.59A11.1,11.1,0,0,0,43.85,4.22Zm-.94,31.46a15.11,15.11,0,0,1-1.68-.54,4,4,0,0,1-1.29-.78A1.77,1.77,0,0,1,39.42,33a2.13,2.13,0,0,1,.13-.7,1.89,1.89,0,0,1,.45-.71,2.3,2.3,0,0,1,.85-.54,3.64,3.64,0,0,1,1.33-.21,3.31,3.31,0,0,1,1.5.34,2.64,2.64,0,0,1,1,.9l.9-.82v6a3.94,3.94,0,0,0-1-.85A7.56,7.56,0,0,0,42.91,35.68ZM8.56,31.9h0l7.55,11.16H8.56ZM44.49,43.06a3.88,3.88,0,0,0,.47-.32A4.33,4.33,0,0,0,45.6,42v1Z"/>
+                    </svg>
+                </div>
+
+                <div class="footer__contacts">
+                    <span class="footer__copy">
+                        © Doings by House of Impact AB 2016
+                    </span>
+
+                    <p>
+                        We are people experts doing greater business. <br>
+                        Doings - for a Change!
+                    </p>
+
+                    <a href="mailto:hej@doings.se">hej@doings.se</a>
+
+                    <p>
+                        Nybrokajen 7, 4 trappor. 111 48 Stockholm
+                    </p>
+
+                    <ul class="footer__social">
+                        <li>
+                            <a href="#" class="footer__social-link" aria-label="Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link" aria-label="Linkedin">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link" aria-label="Facebook">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__text">
+                    <b>GDPR… Ditt namn och din email-adress finns hos oss om du:</b>
+                    <p>
+                        Har varit kund hos oss – deltagit i utbildning, workshop eller föreläsning
+                        Registrerat dig själv som prenumerant via hemsidan
+                        Haft kontakt med oss på annat sätt och tillhör våra personliga nätverk
+                        Vi tycker det är viktigt att användarinformation hanteras på ett ansvarfullt sätt och med goda intentioner. Om du önskar radera dina uppgifter kopplade till den information vi på DOINGS skickar ut kan du när som helst be oss radera dina uppgifter, men vi hoppas självklart att du vill vara kvar och ta del av de tips och tankar vi har kring förändringsarbete. Vår ambition är att vara så relevanta som möjligt inom det område vi brinner för – DO THINGS for a change.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer-postscriptum" id="footerPostscriptum">
+        <div class="container">
+            <div class="footer-postscriptum__container">
+                <p>
+                    Wow, du kom ner hela vägen till botten på sidan. <br>
+                    Du har verkligen förtjänat en bulle.<br>
+                    Nu kan du kolla in <a href="#">THE&nbsp;WORK</a>, läsa <a href="#">VÅR&nbsp;BLOG</a>,
+                    läsa mer <a href="#">OM&nbsp;OSS</a> eller komma i <a href="#">KONTAKT</a> med oss
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
