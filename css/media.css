@@ -123,12 +123,20 @@
 
   .blog-page__blog-section .blog-section__card {
     padding-right: 30px; }
+  .blog-page__blog-section .blog-post {
+    padding-left: 60px; }
 
   .blog-list .blog-section__content h4 {
     font-size: 25px; }
   .blog-list .blog-section__content .author {
     font-size: 20px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  .blog-post__head h1 {
+    max-width: 660px;
+    font-size: 60px; }
+  .blog-post__desc {
+    font-size: 21px; } }
 @media screen and (max-width: 1200px) {
   h4 {
     font-size: 30px; }
@@ -315,7 +323,21 @@
     margin-top: 20px; }
   .blog-page__blog-section .tabs-content-section__dots {
     margin-left: 30px;
-    margin-right: 30px; } }
+    margin-right: 30px; }
+
+  .blog-post__author img {
+    width: 60px;
+    height: 60px; }
+  .blog-post__head {
+    height: 470px; }
+    .blog-post__head h1 {
+      max-width: 80%;
+      font-size: 42px;
+      line-height: 130%; }
+
+  h6 {
+    font-size: 18px;
+    margin-top: 30px; } }
 @media screen and (max-width: 1095px) {
   .blog-section::after {
     height: 310px;
@@ -591,10 +613,32 @@
             flex-direction: column;
     padding-top: 30px;
     padding-right: 0; }
+  .blog-page__blog-section .blog-post__bottom {
+    margin: 0 30px;
+    margin-top: 30px; }
   .blog-page__blog-section .blog-list {
     width: 60%; }
   .blog-page__blog-section .blog-aside {
     width: 40%; }
+  .blog-page__blog-section .blog-post {
+    padding-left: 25px;
+    padding-right: 30px;
+    width: 60%; }
+    .blog-page__blog-section .blog-post__head h1 {
+      font-size: 37px; }
+    .blog-page__blog-section .blog-post__desc {
+      font-size: 19px; }
+    .blog-page__blog-section .blog-post + .blog-aside {
+      margin-top: 40px; }
+    .blog-page__blog-section .blog-post .blog-post__contacts-list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-bottom: 0;
+      margin-top: 20px; }
+      .blog-page__blog-section .blog-post .blog-post__contacts-list li {
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+        margin-bottom: 20px; }
 
   .blog-aside__list {
     padding: 20px 0px; }
@@ -609,7 +653,12 @@
 
   .header-blog-bg::before {
     width: 367px;
-    height: 386px; } }
+    height: 386px; }
+
+  .blog-post__head {
+    padding-left: 40px;
+    height: 420px;
+    padding-bottom: 40px; } }
 @media screen and (max-width: 768px) {
   .upcoming-section .upcoming__list li:not(:last-child) {
     margin-right: 1em; }
@@ -796,8 +845,27 @@
     border-right: none; }
     .blog-page__blog-section .blog-list li {
       margin: 0 25px; }
+  .blog-page__blog-section .blog-post__head {
+    height: auto; }
+    .blog-page__blog-section .blog-post__head h1 {
+      padding-top: 140px;
+      font-size: 32px;
+      max-width: 91%; }
   .blog-page__blog-section .blog-aside {
-    width: 100%; } }
+    width: 100%; }
+  .blog-page__blog-section .blog-post {
+    width: 100%;
+    padding: 0 25px;
+    border: none; }
+  .blog-page__blog-section .blog-post__bottom {
+    margin: 0 20px;
+    margin-top: 30px; }
+  .blog-page__blog-section h5 {
+    font-size: 20px; }
+
+  .blog-post .blog-post__contacts-list a:before {
+    width: 25px;
+    height: 25px; } }
 @media screen and (max-width: 610px) {
   .upcoming-section h4 {
     text-align: center;
@@ -1010,7 +1078,20 @@
   body.contact-page main {
     padding-bottom: 40px; }
     body.contact-page main::after {
-      display: none; } }
+      display: none; }
+
+  .blog-page__blog-section .blog-post__head {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px; }
+    .blog-page__blog-section .blog-post__head h1 {
+      font-size: 27px;
+      max-width: 100%;
+      margin-bottom: 20px; }
+
+  .blog-post__author img {
+    width: 50px;
+    height: 50px; } }
 @media screen and (max-width: 426px) {
   .upcoming-section .upcoming__list li {
     width: 90%; }
@@ -1094,6 +1175,10 @@
     .article-section .article-section__headline-container .article-section__headline-content h2 {
       font-size: 28px; }
     .article-section .article-section__headline-container .article-section__headline-content q {
-      font-size: 17px; } }
+      font-size: 17px; }
+
+  .blog-page__blog-section .blog-post__head h1 {
+    font-size: 24px;
+    padding-top: 100px; } }
 
 /*# sourceMappingURL=media.css.map */

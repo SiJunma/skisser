@@ -1378,6 +1378,40 @@ footer {
   .blog-page__blog-section .tabs-content-section__dots .tabs-content-section__dots-container .dot-btn.dot-active {
     background-color: #6BBBBB; }
 
+.blog-aside {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 30%; }
+  .blog-aside h5 {
+    font-family: 'Roboto', sans-serif; }
+  .blog-aside__title {
+    background-color: #E0D6B9;
+    padding: 30px 20px;
+    font-weight: 300; }
+    .blog-aside__title h5 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 0; }
+    .blog-aside__title a {
+      color: inherit; }
+  .blog-aside p {
+    margin: 0; }
+  .blog-aside__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-top: 1px dashed #1918195e;
+    margin-top: 30px;
+    padding: 20px 20px;
+    padding-top: 30px; }
+    .blog-aside__list li:not(:last-child) {
+      margin-bottom: 20px; }
+    .blog-aside__list a {
+      color: inherit;
+      text-decoration: none; }
+
 .blog-post__desc {
   font-size: 22px;
   font-weight: 300;
@@ -1429,41 +1463,6 @@ footer {
         opacity: 0.95; }
       .blog-post .blog-post__contacts-list a[aria-label="Twitter"]:before {
         background-image: url("../img/twitter-square.png"); }
-
-.blog-aside {
-  margin-top: 50px;
-  padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 30%; }
-  .blog-aside h5 {
-    font-family: 'Roboto', sans-serif; }
-  .blog-aside__title {
-    background-color: #E0D6B9;
-    padding: 30px 20px;
-    font-weight: 300; }
-    .blog-aside__title h5 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 0; }
-    .blog-aside__title a {
-      color: inherit; }
-  .blog-aside p {
-    margin: 0; }
-  .blog-aside__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    border-top: 1px dashed #1918195e;
-    margin-top: 30px;
-    padding: 20px 20px;
-    padding-top: 30px; }
-    .blog-aside__list li:not(:last-child) {
-      margin-bottom: 20px; }
-    .blog-aside__list a {
-      color: inherit;
-      text-decoration: none; }
-
 .blog-post__head {
   width: 100%;
   color: #fff;
@@ -1493,7 +1492,7 @@ footer {
     font-size: 70px;
     margin-top: auto;
     margin-bottom: 30px;
-    max-width: 1150px;
+    max-width: 770px;
     line-height: 110%;
     font-weight: 700; }
   .blog-post__head img {
