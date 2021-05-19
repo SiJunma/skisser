@@ -387,6 +387,7 @@
 
             span {
                 height: 4px;
+                width: 40px;
             }
         }
 
@@ -1481,6 +1482,10 @@
         .nav__btn-toggle {
             width: 30px;
             height: 22px;
+
+            span {
+                width: 30px;
+            }
         }
 
         &.nav_open .nav__btn-toggle {

@@ -217,7 +217,8 @@
       width: 40px;
       height: 26px; }
       .nav .nav__btn-toggle span {
-        height: 4px; }
+        height: 4px;
+        width: 40px; }
     .nav .nav__logo-box {
       width: 64px;
       height: 61px; }
@@ -919,6 +920,8 @@
   .nav .nav__btn-toggle {
     width: 30px;
     height: 22px; }
+    .nav .nav__btn-toggle span {
+      width: 30px; }
   .nav.nav_open .nav__btn-toggle {
     width: 30px;
     height: 30px; }

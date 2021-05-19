@@ -323,7 +323,7 @@ header {
     position: relative; }
     .nav .nav__btn-toggle span {
       background-color: #212121;
-      width: 100%;
+      width: 50px;
       height: 8px;
       display: block;
       border-radius: 50px;
