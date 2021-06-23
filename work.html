@@ -49,10 +49,10 @@
         <div class="nav__menu" id="navMenu">
             <div class="container">
                 <ul class="nav__menu-list">
-                    <li><a href="work.html">THE WORK</a></li>
-                    <li><a href="blog.html">VÅR BLOG</a></li>
-                    <li><a href="about.html">OM OSS</a></li>
-                    <li><a href="contact.html">KONTAKT</a></li>
+                    <li><a href="work.html" class="nav__link_work">VAD VI GÖR</a></li>
+                    <li><a href="blog.html" class="nav__link_blog">HUR VI GÖR</a></li>
+                    <li><a href="about.html" class="nav__link_about">VI SOM GÖR</a></li>
+                    <li><a href="contact.html" class="nav__link_contact">KONTAKT</a></li>
                 </ul>
                 <p>
                     Det bästa sättet att lära känna oss är ett personligt möte. Var inte blyg, utan kom förbi på en kopp kaffe och berätta hur vi kan hjälpa dig och ditt företag. <br>
@@ -62,10 +62,10 @@
         </div>
     </nav>
 
-    <header class="header-work-bg header-headline_ghost-bg">
+    <header class="header-work-bg">
         <div class="container">
             <div class="header-title__wrapper">
-                <h1>The Work</h1>
+                <h1>Kundcase</h1>
             </div>
         </div>
     </header>
@@ -75,13 +75,13 @@
             <div class="container">
                 <div class="tabs-section__list" id="tabsSlider">
                     <div>
-                        <button class="btn tab-btn tab-active" type="button" data-target="#customerCase">KUNDCASE</button>
+                        <button class="btn tab-btn tab-active" type="button" data-target="#customerCase" data-header-title="Kundcase">VAD VI GJORT</button>
                     </div>
+                    <!-- <div>
+                        <button class="btn tab-btn" type="button" data-target="#learnings">VAD VI GÖR</button>
+                    </div> -->
                     <div>
-                        <button class="btn tab-btn" type="button" data-target="#learnings">LEARNINGS</button>
-                    </div>
-                    <div>
-                        <button class="btn tab-btn" type="button" data-target="#services">TJÄNSTER</button>
+                        <button class="btn tab-btn" type="button" data-target="#services" data-header-title="Tjänster">VAD VI GÖR</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
 
         <section class="tabs-content-section tabs-content-section_visible" id="customerCase">
             <div class="container">
-                <ul class="tabs-content-section__list tabs-content-page_visible" id="page1">
+                <ul class="tabs-content-section__list tabs-content-page tabs-content-page_visible" id="page1">
                     <li>
                         <div class="tab-card">
                             <div class="tab-card__img">
@@ -144,7 +144,7 @@
                                 </a>
                                 <span class="author">Kund: Quickspin</span>
                                 <p>
-                                    Det märks direkt när man möter personer som har både hjärta, passion och kunskap för det de gör. Vi har alltid fått den proffsigaste hjälpen och bästa bollplanket genom vår resa. Och Doings har från dag ett känts som en del av oss på Quickspin.De utmanar oss, får oss att jobba hårdare och får oss att tänka i andra perspektiv. Kulturen vi skapat på Quickspin genom åren är en direkt följd av Doings fantastiska arbete och engagemang för oss.
+                                    Det märks direkt när man möter personer som har både hjärta, passion och kunskap för det de gör. Vi har alltid fått den proffsigaste hjälpen och bästa bollplanket genom vår resa. Och Doings har från dag ett känts som en del av oss på Quickspin. De utmanar oss, får oss att jobba hårdare och får oss att tänka i andra perspektiv. Kulturen vi skapat på Quickspin genom åren är en direkt följd av Doings fantastiska arbete och engagemang för oss.
                                 </p>
                             </div>
                         </div>
@@ -211,7 +211,7 @@
                     </li>
                 </ul>
 
-                <ul class="tabs-content-section__list" id="page2">
+                <ul class="tabs-content-section__list tabs-content-page" id="page2">
 
                     <li>
                         <div class="tab-card">
@@ -351,9 +351,170 @@
             </div>
         </section>
 
-        <section class="tabs-content-section" id="learnings"> </section>
+        <!-- <section class="tabs-content-section" id="learnings"> </section> -->
 
-        <section class="tabs-content-section" id="services"> </section>
+        <section class="tabs-content-section" id="services">
+            <div class="container">
+                <div class="services-content-section__wrapper">
+                    <div class="services-content-section__content">
+
+                        <div class="services-content-section__tab-content" id="service1">
+                            <h5>Få alla med på tillväxtresan</h5>
+                        </div>
+
+                        <div class="services-content-section__tab-content" id="service2">
+                            <h5>Stärk företagskultur och värderingar och öka ert engagemang</h5>
+                        </div>
+
+                        <div class="services-content-section__tab-content" id="service3">
+                            <h5>Skapa en lärande organisation</h5>
+                        </div>
+
+                        <div class="services-content-section__tab-content services-content-section__tab-content_visible" id="service4">
+                            <h5>FÅ NYA ARBETSSÄTT ATT HÄNDA</h5>
+                            <p>
+                                Står ni i startgroparna för att effektivisera eller digitalisera era processer och arbetssätt? Kanske planerar ni att införa ett nytt digitalt verktyg eller att jobba med OKR- Objectives & Key Results? 
+                            </p>
+                            <p>
+                                Att få den tekniska lösningen eller målstyrningsmodellen på plats är en sak, men att verkligen lyckas - att få medarbetarna att förstå, gilla och arbeta med det på bästa sätt är en helt annan femma.
+                            </p>
+
+                            <p>
+                                Men misströsta ej, det är här vi kommer in i bilden! Vi stöttar kring allt som rör själva förändringsledningen i projekten. Vi bidrar med djup och bred beteende- och organisationskunskap i såväl design av processen som i själva projektledarskapet, för att hjälpa er utveckla nya (sam)arbetssätt och lyckas med det ni vill åstadkomma.
+                            </p>
+
+                            <p>
+                                Metoden för att få detta att hända kallar vi för Human Onboarding. Metoden är enkel men ack så otroligt viktig. Och går att göra i princip så stor eller liten som just er situation och organisation kräver. Ibland stöttar vi med enstaka workshops, ibland driver vi projektet från strategi och start till mål och uppföljning.
+                            </p>
+
+                            <ul class="tabs-content-section__list services-section__tab-case-list">
+                                <li>
+                                    <div class="tab-card">
+                                        <div class="tab-card__img">
+                                            <img src="img/photo1.jpg">
+                                            <img class="tab-card__logo-brand" src="img/ramboll.png">
+                                        </div>
+                                        <div class="tab-card__content">
+                                            <a href="#ramboll" class="tab-card__title-link">
+                                                <h4>
+                                                    Så fick vi ut strategin i händer och fötter
+                                                </h4>
+                                            </a>
+                                            <span class="author">Kund: Ramboll</span>
+                                            <p>
+                                                Vi valde Doings framförallt för att det iterativa upplägget tilltalade oss. Många andra leverantörer erbjöd färdiga ”paket”, vilket gör att både vi som kund och leverantören är låsta till ett förbestämt upplägg. Med Doings lösning – där vi hade en ram för upp-lägget och en målbild om vad vi ville uppnå – fick vi en följsam och relevant process för deltagarna. Tack vare det kunde vi tillsammans lära och och anpassa processen till ett än mer träffsäkert resultat
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="tab-card">
+                                        <div class="tab-card__img">
+                                            <img src="img/photo3.jpg">
+                                            <img class="tab-card__logo-brand" src="img/sweco.png" style="margin-bottom: 34px;">
+                                        </div>
+                                        <div class="tab-card__content">
+                                            <a href="#sweco" class="tab-card__title-link">
+                                                <h4>
+                                                    Vi sökte en vikarie, men fick en raketmotor
+                                                </h4>
+                                            </a>
+                                            <span class="author">Kund: Sweco</span>
+                                            <p>
+                                                Vi vände oss till Doings för att vi sedan tidigare jobbade med dem och var supernöjda. Vi fick förmånen att jobba med en strategisk och handlingskraftig doer som är lyhörd, sympatisk och lätt att tycka om. Hon var fantastiskt snabb på att komma in i uppdraget och bidra från dag ett. Man blir utmanad och får energi av att samarbeta med Doings – dessutom har man roligt under tiden!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="services-content-section__tab-content" id="service5">
+                            <h5>Stärk ert varumärke - inifrån och ut</h5>
+                        </div>
+
+                        <div class="services-content-section__tab-content" id="service6">
+                            <h5>Jobba mer agilt</h5>
+                        </div>
+
+                        <div class="services-content-section__tab-content" id="service7">
+                            <h5>Ledarutveckling</h5>
+                        </div>
+
+                        <div class="services-content-section__tab-content" id="service8">
+                            <h5>Team- och ledarskapscoaching</h5>
+                        </div>
+                        <div class="services-content-section__tab-content" id="service9">
+                            <h5>Föreläsningar och facilitering</h5>
+                        </div>
+                    </div>
+
+                    <aside class="services-content-section__aside">
+                        <ul class="services-section__tab-list">
+                            <li>
+                                <a href="#service1" class="services-section__tab-link">
+                                    Få alla med på tillväxtresan
+                                </a>
+                            </li>  
+                            <li>
+                                <a href="#service2" class="services-section__tab-link">
+                                    Stärk företagskultur och värderingar och öka ert engagemang
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#service3" class="services-section__tab-link">
+                                    Skapa en lärande organisation
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#service4" class="services-section__tab-link active">
+                                    Få nya arbetssätt att hända
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#service5" class="services-section__tab-link">
+                                    Stärk ert varumärke - inifrån och ut
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#service6" class="services-section__tab-link">
+                                    Jobba mer agilt
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#service7" class="services-section__tab-link">
+                                    Ledarutveckling
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#service8" class="services-section__tab-link">
+                                    Team- och ledarskapscoaching
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#service9" class="services-section__tab-link">
+                                    Föreläsningar och facilitering
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="container">
+                    <div class="services-content-section__toback">
+                        <a href="#" class="article-section__toback">Tillbaka till kundcase</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="case-articles">
             <article class="article-section" id="klovern">
@@ -460,19 +621,19 @@
                                         <a href="Content.html">Content</a>
                                     </li>
                                     <li>
-                                        <a href="#">Social Media</a>
+                                        <a class="disabled">Social Media</a>
                                     </li>
                                     <li>
                                         <a href="data.html">Data + optimization</a>
                                     </li>
                                     <li>
-                                        <a href="#">Digital Design & Development</a>
+                                        <a class="disabled">Digital Design & Development</a>
                                     </li>
                                     <li>
-                                        <a href="#">Product R&D / Prototyping</a>
+                                        <a class="disabled">Product R&D / Prototyping</a>
                                     </li>
                                     <li>
-                                        <a href="#">Still Photography</a>
+                                        <a class="disabled">Still Photography</a>
                                     </li>
                                     <li>
                                         <a href="art.html">Art + Copy</a>
@@ -481,16 +642,16 @@
                                         <a href="Retouch.html">Retouch</a>
                                     </li>
                                     <li>
-                                        <a href="#">Strategy</a>
+                                        <a class="disabled">Strategy</a>
                                     </li>
                                     <li>
-                                        <a href="#">Technology</a>
+                                        <a class="disabled">Technology</a>
                                     </li>
                                     <li>
-                                        <a href="#">UX + Design</a>
+                                        <a class="disabled">UX + Design</a>
                                     </li>
                                     <li>
-                                        <a href="#">Final Art</a>
+                                        <a class="disabled">Final Art</a>
                                     </li>
                                     <li>
                                         <a href="Experience.html">In-store Experience & Activation</a>
