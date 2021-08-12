@@ -1,14 +1,12 @@
 @font-face {
-  font-family: "Hot_Mess";
-  src: url(../fonts/HotMess.eot);
-  src: local("HotMess"), local("HotMess"), local("Hot_Mess"),
-    url(../fonts/HotMess.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HotMess.woff2) format("font/woff2"),
-    url(../fonts/HotMess.woff) format("font/woff"),
-    url(../fonts/HotMess.ttf) format("font/ttf"),
-    url(../fonts/HotMess.ttf) format("font/truetype"),
-    url(../fonts/HotMess.svg#HotMess) format("image/svg+xml");
-  font-weight: 400;
+  font-family: 'hot_messregular';
+  src: url('../fonts/hot-mess-webfont.eot');
+  src: url('../fonts/hot-mess-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/hot-mess-webfont.woff2') format('woff2'),
+       url('../fonts/hot-mess-webfont.woff') format('woff'),
+       url('../fonts/hot-mess-webfont.ttf') format('truetype'),
+       url('../fonts/hot-mess-webfont.svg#hot_messregular') format('svg');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -4337,7 +4335,8 @@ header h1 {
   position: absolute;
   content: "THE WORK";
   display: block;
-  font-family: "Hot_Mess";
+  font-family: "hot_messregular";
+  font-weight: 400;
   color: #59d9bc;
   z-index: -1;
   font-size: 192px;
@@ -4485,7 +4484,7 @@ header h1 {
   fill: #fff;
 }
 .header_main .header__slogan {
-  font-family: "Hot_Mess";
+  font-family: "hot_messregular";
   font-weight: 400;
   font-style: normal;
   font-size: 63px;
@@ -4536,7 +4535,8 @@ header h1 {
 }
 .nav .nav__menu .nav__menu-list li a::before {
   position: absolute;
-  font-family: "Hot_Mess";
+  font-family: "hot_messregular";
+  font-weight: 400;
   z-index: -1;
   font-size: 130px;
   letter-spacing: 0.0005em;
